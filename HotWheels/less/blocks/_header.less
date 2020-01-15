@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  min-height: 454px;
+  padding-top: 36px;
+  background-image: url("../img/header-bg-1.jpg");
+  background-color: #f2e0d4;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 980px) {
+    height: 800px;
+  }
+}
+
+.header__nav-row {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media(min-width: 980px) {
+    margin-bottom: 150px;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  display: none;
+  
+  @media(min-width: 980px) {
+    display: flex;
+    color: #404040;
+    font-family: "Teko", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+  }
+
+}
+
+.header__nav-link {
+  position: relative;
+  color: #404040;
+  text-decoration: none;
+  margin-right: 52px;
+}
+
+.header__nav-link:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  color: #004cff;
+}
+
+.header__nav-link:not(:last-child):after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #004cff;
+  transform: rotateZ(45deg);
+  transform-origin: 0% 50%;
+  right: -30px;
+  top: 0.5rem;
+  pointer-events: none;
+}
+
+.header__button {
+  display: none;
+
+  @media(min-width: 980px) {
+    display: inline-block;
+    height: 66px;
+    padding: 23px 38px 0 38px;
+    border: 1px solid #004cff;
+    background-color: #004cff;
+    color: #ffffff;
+    font-family: "Teko", sans-serif;
+    font-size: 23px;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.45px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  }
+}
+
+.header__button:hover {
+  background-color: #ffffff;
+  color: #004cff;
+}
+
+
+.header__promo {
+  max-width: 400px;
+}
+
+.header__title {
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 2.73px;
+  
+  @media(min-width: 480px) {
+    font-size: 52px;
+  }
+  
+  @media(min-width: 980px) {
+    font-size: 68px;
+  }
+}
+
+.header__promo-button {
+  display: inline-block;
+  padding: 14px 48px 0 48px;
+  height: 61px;
+  border: 6px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.header__promo-button:hover {
+  color: #ffd03b;
+  border-color: #ffd03b;
+}
+
+.header__nav-button {
+  @media (min-width: 980px) {
+    display: none;
+  }
+}

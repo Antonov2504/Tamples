@@ -1,0 +1,143 @@
+.footer {
+  padding: 15px 0;
+
+  @media (min-width: 640px) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 60px 0;
+  }
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 65px;
+  }
+}
+
+.footer__column {
+  width: 100%;
+  margin-bottom: 40px;
+
+  
+  @media (min-width: 640px) {
+    width: 50%;
+    margin-bottom: 60px;
+    &:nth-child(odd) { padding-right: 40px; }
+    &:nth-child(even) { padding-left: 40px; }
+  }
+
+  @media (min-width: 992px) {
+    width: auto;
+    max-width: 260px;
+    &:nth-child(odd) { padding-right: 0; }
+    &:nth-child(even) { padding-left: 0; }
+  }
+}
+
+.footer__group:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 19px;
+  line-height: 2em;
+}
+
+.footer-list__item {
+  margin-bottom: 10px;
+}
+
+.footer__logo {
+  margin-bottom: 45px;
+}
+
+.footer__cards {
+  display: flex;
+  justify-content: flex-start;
+
+  img:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  @media (min-width: 992px) {
+    img:not(:last-child) {
+      margin-right: 0;
+    }
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding-top: 50px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0.13px;
+  color: #b2b2b2;
+  border-top: 1px solid #b2b2b2;
+}
+
+.copyright__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.copyright__links {
+  display: flex;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 640px) {
+    margin-bottom: 0;
+  }
+}
+
+.copyright__links-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.copyright__links-item a {
+  color: #b2b2b2;
+  font-size: 19px;
+  line-height: 1.7em;
+  letter-spacing: 0.13px;
+  text-decoration: none;
+}

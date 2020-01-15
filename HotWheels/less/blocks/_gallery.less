@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0;
+
+  @media (min-width: 768px) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 60px 0;
+  }
+}
+
+.gallery__item {
+  width: 33.33333%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
